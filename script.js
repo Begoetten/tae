@@ -1,22 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".fisico").forEach(fisico => {
-        let toggleButton = fisico.querySelector(".toggle-info");
-        let info = fisico.querySelector(".info");
-        
-        // Esconde o texto inicialmente
-        info.style.display = "none";
+document.addEventListener("DOMContentLoaded", function() {
+    const fisicos = document.querySelectorAll('.fisico');
 
-        toggleButton.addEventListener("click", function () {
-            // Alterna a visibilidade do texto
-            if (info.style.display === "none") {
-                info.style.display = "block";
-            } else {
-                info.style.display = "none";
-                .hidden {
-                    display: none;
-                }
-                
-            }
+    fisicos.forEach(fisico => {
+        const seta = fisico.querySelector('.seta');
+        const texto = fisico.querySelector('p');
+
+        seta.addEventListener('click', function() {
+            texto.classList.toggle('show'); // Mostra ou esconde o texto
         });
     });
 });

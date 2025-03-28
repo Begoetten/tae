@@ -1,91 +1,203 @@
 body {
-    background-color: #f1e4a4; /* Amarelo claro */
     font-family: 'Arial', sans-serif;
+    background-color: #f2e7bc; /* Fundo amarelo claro */
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #f1e4a4;
-}
-
-header {
+    padding: 30px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 h1 {
-    color: #8b5a2b; /* Cor dourada */
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 h2 {
-    color: #8b5a2b;
-    font-size: 28px;
+    font-size: 2em;
     margin-bottom: 10px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 .fisico {
-    display: flex;
-    flex-direction: row; /* Garantindo alinhamento horizontal */
-    justify-content: flex-start; /* Alinha a imagem e o texto à esquerda */
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f9e4b7;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    width: 150px;
 }
 
 .fisico img {
+    border-radius: 50%;
     width: 120px;
     height: 120px;
-    border-radius: 50%;
     object-fit: cover;
-    margin-right: 20px; /* Espaço entre a imagem e o texto */
-    border: 3px solid #8b5a2b;
-}
-
-.fisico div {
-    flex: 1;
-    max-width: 500px;
 }
 
 .fisico h3 {
-    color: #8b5a2b;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
 }
 
 .fisico p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #5a3d2e;
-    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+    display: none;
+    transition: all 0.3s;
 }
 
-/* Ajustes para a seta */
-.seta {
+.fisico:hover p {
+    display: block;
+}
+
+.fisico button {
+    background-color: #f7b500;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
     cursor: pointer;
-    font-size: 24px;
-    color: #8b5a2b;
-    margin-left: 20px;
-    transition: transform 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.seta:hover {
-    transform: rotate(90deg); /* Efeito ao passar o mouse */
+.fisico button:hover {
+    background-color: #f7a000;
 }
 
-footer {
+.hr-line {
+    margin-top: 50px;
+    border: 0;
+    border-top: 2px solid #333;
+    width: 50%;
+    margin-bottom: 40px;
+}
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f3d2; /* Amarelo claro */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+h1 {
     text-align: center;
+    font-size: 2.5em;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #333;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #4a4a4a;
+    margin-top: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 15px 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Melhorando a leitura da história */
+p.introducao {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+p.origens,
+p.idade_media,
+p.revolucao_cientifica,
+p.seculo_xix,
+p.seculo_xx,
+p.seculo_xxi,
+p.conclusao {
+    margin-top: 25px;
+    font-size: 1.1em;
+}
+
+/* Estilo para a parte dos físicos */
+.fisicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 40px;
-    color: #8b5a2b;
-    font-size: 14px;
+}
+
+.fisico {
+    width: 250px;
+    text-align: center;
+    margin: 20px;
+}
+
+.fisico img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #333;
+}
+
+.fisico h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.fisico p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .fisicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fisico {
+        width: 80%;
+    }
 }
