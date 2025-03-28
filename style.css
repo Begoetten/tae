@@ -1,0 +1,91 @@
+body {
+    background-color: #f1e4a4; /* Amarelo claro */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1e4a4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #8b5a2b; /* Cor dourada */
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #8b5a2b;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.fisico {
+    display: flex;
+    flex-direction: row; /* Garantindo alinhamento horizontal */
+    justify-content: flex-start; /* Alinha a imagem e o texto à esquerda */
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9e4b7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fisico img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    border: 3px solid #8b5a2b;
+}
+
+.fisico div {
+    flex: 1;
+    max-width: 500px;
+}
+
+.fisico h3 {
+    color: #8b5a2b;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fisico p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5a3d2e;
+    margin-bottom: 10px;
+}
+
+/* Ajustes para a seta */
+.seta {
+    cursor: pointer;
+    font-size: 24px;
+    color: #8b5a2b;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.seta:hover {
+    transform: rotate(90deg); /* Efeito ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #8b5a2b;
+    font-size: 14px;
+}
